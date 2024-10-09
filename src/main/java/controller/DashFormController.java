@@ -14,7 +14,7 @@ public class DashFormController {
     void btnAddToDoOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/Add-To-Do.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Add-To-Do.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -25,7 +25,7 @@ public class DashFormController {
     void btnViewToDoOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/View_To_Do.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/View_To_Do.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
